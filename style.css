@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+
 }
 body{
     font-family: 'Kavivanar', cursive;
@@ -208,7 +209,7 @@ header{
 .skill .fab{
     font-size: 70px;
     color: #30C5FF;
-    background: rgba(162, 250, 163, 1);
+    background: rgb(17, 24, 17);
     padding: 60px;
     transition: colo 2s ease, background 2s ease;
 }
@@ -258,3 +259,92 @@ header{
 }
 
 */
+@media screen and (min-width:576px){
+    .skill-center{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+
+    }
+    .skill{
+        text-align: center;
+
+    }
+    .skill p{
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+@media screen and (min-width:992px){
+    .skill-center{
+       
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .skill p{
+        width: 100%;
+    }
+}
+
+/*form section*/
+#form{
+    min-height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(img/subscribe.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 15%, 100% 0,100% 85%, 0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title{
+    text-align: center;
+    color: aliceblue;
+    margin: 15px 0 40px 0;
+    font-size: 2.3em;
+    text-transform: uppercase;
+}
+#email{
+    border: none;
+    border-bottom: 3px solid #005a99;
+    background: transparent;
+    padding: 15px;
+    font-size: 2em;
+    margin: 0 10px;
+    color: wheat;
+}
+#email::placeholder{
+    color: aliceblue;
+    text-transform: capitalize;
+}
+#submit{
+    display: inline-block;
+    padding: 10px 50px;
+    background: transparent;
+    border: 1px solid #005a99;
+    text-transform: uppercase;
+    margin: 10px 20px;
+    transition: color 1s ease, background 2s ease, border 2s ease; 
+    color: #005a99;
+    font-size: 1rem;
+  
+}
+#submit:hover{
+    color: rgb(14, 12, 12);
+    background: #005a99;
+    border-color: #005a99;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (min-width:992px){
+    #email{
+        border: 1px solid #005a99;  
+    }
+
+
+}
