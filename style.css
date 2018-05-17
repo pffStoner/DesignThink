@@ -345,6 +345,57 @@ form{
     #email{
         border: 1px solid #005a99;  
     }
+}
 
+/*WORK SECTION*/
 
+#work .title{
+    flex-direction: row-reverse;
+    margin-top: -20px;
+}
+#work .title-icon .fas{
+    margin-right: 0;
+    margin-left: 10px;
+}
+#work .title-text{
+    padding-left: 0;
+    padding-right: 10px;
+    border-right: 3px solid #2e282e;
+    border-left: none;
+}
+.work-center{
+    padding: 40px 0;
+    max-width: 90%;
+    margin: 0 auto;
+}
+#work img{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #ffc914;
+}
+.button-group{
+    padding: 0 0 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.button-group button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    background: #30C5FF;
+}
+.picture-item{
+    width: calc(25% - 20px);
+    padding: 10px;
+}
+
+@media screen and(min-width:992px){
+    .picture-item{
+        width: calc(25% - 20px);
+    }
 }
