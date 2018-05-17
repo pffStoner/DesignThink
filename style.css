@@ -13,9 +13,6 @@ background-color: rgba(162, 250, 163, 1);
 padding: 5px 20px;
 display: flex;
 justify-content: space-between;
-
-
-
 }
 .nav_logo .fa{
     align-self: center;
@@ -79,7 +76,6 @@ justify-content: space-between;
         flex: 1 0 100px;
     }
     .nav ul li a{
-border-radius: 5px;
 text-align: center;
     }
 
@@ -104,7 +100,7 @@ header{
 }
 #banner{
     flex: 1 0 auto;
-    background: linear-gradient(rgb(193, 238, 29),rgba(0,0,0,0.3)),url('img/header2.jpg');
+    background: linear-gradient(rgba(193, 238, 29,0.9),rgba(0,0,0,0.1)),url('img/header2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -126,8 +122,8 @@ header{
 #secondary-h1{
     position: absolute;
     color: rgba(162, 250, 163, 1);
-    bottom: 4.9rem;
-    left: 10.5rem;
+    bottom: 5.5rem;
+    left: 12.5rem;
     font-size: 2.5rem
 }
 
@@ -146,3 +142,119 @@ header{
     background: rgba(162, 250, 163, 1);
     color: #2e282e;
 }
+
+/*ICON SECTION*/
+#icon-section{
+    height: 70px;
+    background: #141414;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 40%);
+    padding: 20px 0 40px 0;
+}
+#icon-section a{
+    display: inline-block;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background: black;
+    color: #92C9B1;
+    transition: transform 1s ease-in-out, color 2s ease;  
+}
+#icon-section a:hover{
+    transform: translateY(-10px);
+    color: red;
+}
+
+
+/*skills SECTION*/
+
+.title{
+    display: flex;
+    padding: 20px;
+}
+.title-icon .fas{
+    font-size: 60px;
+    color: #92C9B1;
+    margin-right: 10px;
+}
+.title-text{
+    padding-left: 10px;
+    border-left: 3px solid #b5c2b7;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.title-heading{
+}
+.title-subheading{
+    padding: 1rem;
+    color: rgb(87, 63, 63);
+
+}
+
+/*skills*/
+
+#skills .title{
+    margin-top: -40px;
+}
+.skills-center{
+    max-width: 90vw;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.skill{
+    margin: 40px 0;
+}
+.skill .fab{
+    font-size: 70px;
+    color: #30C5FF;
+    background: rgba(162, 250, 163, 1);
+    padding: 60px;
+    transition: colo 2s ease, background 2s ease;
+}
+
+.skill .fab:hover {
+    background: #30C5FF;
+    color: rgba(162, 250, 163, 1);
+}
+.skill h3{
+    text-transform: uppercase;
+    margin: 20px 0; 
+}
+.skill p{
+    line-height: 1.5;
+    width: 70%;
+    color: rgb(87, 63, 63);
+}
+.fa-angrycreative{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+
+}
+/* flex-box responsive
+
+@media screen and (min-width:576px){
+    .skill-center{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .skill{
+       flex: 0 0 calc(50% - 1em);
+        text-align: center;
+    }
+    .skill p{
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+@media screen and (min-width:992px){
+   
+    .skill{
+       flex: 0 0 calc(25% - 1em);
+    }
+    .skill p{
+        width: 100%;
+    }
+}
+
+*/
